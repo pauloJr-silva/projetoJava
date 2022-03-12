@@ -17,13 +17,14 @@ import javafx.stage.Stage;
 
 public class TelaAgneda extends Application {
 
-	private Label lblNomeMedico = new Label("Nome Médico"); 
+	private Label lblNomeMedico = new Label("Nome Mï¿½dico"); 
 	private TextField txtNomeMedico = new TextField();
-	private Label lblNumeroCro = new Label ("Nº CRO");
+	private Label lblNumeroCro = new Label ("Nï¿½ CRO");
 	private TextField txtNumeroCro = new TextField();
 	private Label lblNomePaciente = new Label("Nome Paciente"); 
 	private TextField txtNomePaciente = new TextField();
 	private Label lblDataNascPaciente = new Label("Data Nasc"); 
+	/**/ 
 	private TextField txtDataNascpaciente = new TextField();
 	private Label lblDataConsulta = new Label("Data da Consulta"); 
 	private TextField txtDataConsulta = new TextField();
@@ -37,7 +38,7 @@ public class TelaAgneda extends Application {
 		TableView<Agenda> tabelaAgenda = new TableView<Agenda>();
 		TableColumn<Agenda, Long> id = new TableColumn<>("Id");
 		TableColumn<Agenda, String> nomeDoutor = new TableColumn<>("Nome Doutor");
-		TableColumn<Agenda, Long> numeroCro = new TableColumn<>("N° CRO");
+		TableColumn<Agenda, Long> numeroCro = new TableColumn<>("Nï¿½ CRO");
 		TableColumn< Agenda,String> nomePaciente = new TableColumn<>("Nome Paciente");
 		TableColumn< Agenda,Date> datNasc = new TableColumn<>("Dt. Nasc. Paciente");
 		TableColumn<Agenda, Date> datConsulta = new TableColumn<>("Data Consulta");
